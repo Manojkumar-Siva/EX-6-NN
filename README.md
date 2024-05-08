@@ -17,6 +17,7 @@ Step 9:Evaluate the model's accuracy by comparing the predicted labels (y_pred) 
 Step 10:Print the accuracy of the model.<BR>
 Step 11:Plot the error convergence during training using plt.plot() and plt.show().<BR>
 <H3>Program: </H3>
+
 ```
 import numpy as np
 import pandas as pd
@@ -26,22 +27,22 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 
-# Load the dataset (assuming it's stored in a file)
+#Load the dataset (assuming it's stored in a file)
 data = pd.read_csv('heart.csv')
 
-# Separate features and labels
+#Separate features and labels
 X = data.iloc[:, :-1].values  # Features
 y = data.iloc[:, -1].values   # Labels
 
-# Split the dataset into training and testing sets
+#Split the dataset into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Normalize the feature data
+#Normalize the feature data
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-# Create and train the MLP model
+#Create and train the MLP model
 mlp = MLPClassifier(hidden_layer_sizes=(100, 100), max_iter=1000, random_state=42)
 training_loss = mlp.fit(X_train, y_train).loss_curve_
 
@@ -69,9 +70,7 @@ print(classification_rep)
 ```
 
 <H3>Output:</H3>
-
-![image](https://github.com/Manojkumar-Siva/EX-6-NN/assets/93427265/02fbe62f-d7b8-4a4a-ab64-7e2a952875dc)
-![image](https://github.com/Manojkumar-Siva/EX-6-NN/assets/93427265/d7a80251-ad45-489c-9baf-57baff345ac5)
+![]()
 
 
 <H3>Results:</H3>
