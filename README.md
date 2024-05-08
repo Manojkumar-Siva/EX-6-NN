@@ -70,7 +70,8 @@ print(classification_rep)
 ```
 
 <H3>Output:</H3>
-![]()
+![](./image1.png)
+![](./image2.png)
 
 
 <H3>Results:</H3>
