@@ -72,7 +72,7 @@ print(classification_rep)
 <H3>Output:</H3>
 
 <img src= "image1.png" width=400 height=400>
-<img src= "image2.png" width=300 height=300>
+<img src= "image2.png" width=500 height=350>
 
 
 <H3>Results:</H3>
