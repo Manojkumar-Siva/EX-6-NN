@@ -71,8 +71,8 @@ print(classification_rep)
 
 <H3>Output:</H3>
 
-![](./image1.png)
-![](./image2.png)
+<img src= "image1.png" width=300 height=300>
+<img src=" image2.png" width=300 height=300>
 
 
 <H3>Results:</H3>
